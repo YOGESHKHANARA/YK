@@ -33,7 +33,7 @@ if (g_bAOSupport)
 var g_strQuery = document.location.search.substr(1);
 
 // Write the swf object
-function WriteSwfObject(strSwfFile, nWidth, nHeight, strScale, strAlign, strQuality, strBgColor, bCaptureRC, strWMode, strFlashVars, targetElement)
+function WriteSwfObject(strSwfFile, nWidth, nHeight, strScale, strAlign, strQuality, strBgColor, bCaptureRC, strWMode, strFlashVars)
 {
 	var strHtml = "";
 	var strWidth = nWidth + "px";
@@ -120,16 +120,7 @@ function WriteSwfObject(strSwfFile, nWidth, nHeight, strScale, strAlign, strQual
 	strHtml += "</object>";
 	strHtml += "</div>";
 
-	if (!targetElement)
-	{
-		document.write(strHtml);
-	}
-	else
-	{
-		g_bElement = true;
-		g_oContainer = targetElement;
-		targetElement.innerHTML = strHtml;
-	}
+	document.write(strHtml);
 	
 	if (bCaptureRC)
 	{
@@ -325,13 +316,13 @@ function GetHostVars()
 		switch(arrPair[0])
 		{
 			case "artcommid":
-				strResult += "&vCommId=" + encodeURI(arrPair[1]);
+				strResult += "&vCommId=" + arrPair[1];
 				break;
 			case "arthostresume":
-				strResult += "&vResumeOverride=" + encodeURI(arrPair[1]);
+				strResult += "&vResumeOverride=" + arrPair[1];
 				break;
 			case "artvolume":
-				strResult += "&InitVolume=" + encodeURI(arrPair[1]);
+				strResult += "&InitVolume=" + arrPair[1];
 				break;
 		}
 	}
@@ -429,21 +420,21 @@ function ResizeOptimal()
 			// Resize the window so we know what the actual size is
 			top.window.resizeTo(g_nWindowWidth, g_nWindowHeight);
 			
-			setTimeout( function()
+			// Since we know the actual browser size, and we can query the cliet dim, lets get the frame dim
+			nFrameWidth = (g_nWindowWidth) - GetContentWidth();
+			nFrameHeight = (g_nWindowHeight) - GetContentHeight();
+			
+			// Not lets resize it to the correct size
+			g_nWindowWidth = g_nWidth + nFrameWidth;
+			g_nWindowHeight = g_nHeight + nFrameHeight;
+			
+			top.window.resizeTo(g_nWindowWidth, g_nWindowHeight);
+			
+			if (IE)
 			{
-				// Since we know the actual browser size, and we can query the client dim, lets get the frame dim
-				nFrameWidth = (g_nWindowWidth) - GetContentWidth();
-				nFrameHeight = (g_nWindowHeight) - GetContentHeight();
-				
-				// lets resize it to the correct size
-				g_nWindowWidth = g_nWidth + nFrameWidth;
-				g_nWindowHeight = g_nHeight + nFrameHeight;
-				
-				top.window.resizeTo(g_nWindowWidth, g_nWindowHeight);
-
-				// sometimes there is a third party toolbar that doesn't load until after we have finish resizing everything, so we will do a check for this
+				// ok,  sometimes there is a third party toolbar that doesn't load until after we have finish resizing everything, so we will do a check for this (this only seems to effect IE, FF behaves correctly)
 				g_nSizeInterval = setInterval(CheckSize, 500);
-			}, 0);		
+			}			
 		}
 	}
 	else
@@ -646,9 +637,6 @@ function OpenWebObject(strId, strUrl, nXPos, nYPos, nWidth, nHeight, nSlideXOffs
 		oIFrame.style.width = "100%";
 		oIFrame.style.height = "100%";
 		oIFrame.allowtransparency = "true";
-		oIFrame.setAttribute('allowFullScreen', '');
-		oIFrame.setAttribute('webkitallowFullScreen', '');
-		oIFrame.setAttribute('mozallowFullScreen', '');
 		
 		oWebObject.Div.appendChild(oIFrame);
 		oWebObject.IFrame = oIFrame;
@@ -1414,7 +1402,7 @@ function ContentResults()
 	this.nPassingScore = 80;
 	this.nScore = 0;
 	this.strStatus = "incomplete";
-	this.strType = "view";
+	this.strType = "quiz";
 }
 
 function QuestionResults(strId, strLMSId, strType, strCorrectResponse, strUserResponse, nLatency, strStatus, nPoints, strCompletedTime, nWeight, nQuestionNumber, strDescription, bTracked) 
