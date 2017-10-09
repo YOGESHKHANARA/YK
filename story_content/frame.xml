@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabsnfns00001100101" textdirection="ltr" device="true" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" outputtype="undefined">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns00001100101" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" outputtype="undefined">
   <layouts>
-    <layout name="npnxnanbsnfns00001100101" font="Open Sans" controllayout="npnxnanbsnfns00001100101" colorscheme="pxabsnfns00001100101" string_table="pxabsnfns00001100101" />
-    <layout name="pxabnsnfns00001100101" font="Open Sans" controllayout="pxabnsnfns00001100101" colorscheme="pxabsnfns00001100101" string_table="pxabsnfns00001100101" />
-    <layout name="npxnabnsnfns00001100101" font="Open Sans" controllayout="npxnabnsnfns00001100101" colorscheme="pxabsnfns00001100101" string_table="pxabsnfns00001100101" />
-    <layout name="npnxnanbnsnfns00001100101" font="Open Sans" controllayout="npnxnanbnsnfns00001100101" colorscheme="pxabsnfns00001100101" string_table="pxabsnfns00001100101" />
-    <layout name="pxabnsnfns00001100100" font="Open Sans" controllayout="pxabnsnfns00001100100" colorscheme="pxabsnfns00001100101" string_table="pxabsnfns00001100101" />
-    <layout name="pxabsnfns00001100101" font="Open Sans" controllayout="pxabsnfns00001100101" colorscheme="pxabsnfns00001100101" string_table="pxabsnfns00001100101" />
+    <layout name="npnxnanbsnfns00001100101" font="Open Sans" controllayout="npnxnanbsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
+    <layout name="pxabnsnfns00001100101" font="Open Sans" controllayout="pxabnsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
+    <layout name="npxnabnsnfns00001100101" font="Open Sans" controllayout="npxnabnsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
+    <layout name="npnxnanbnsnfns00001100101" font="Open Sans" controllayout="npnxnanbnsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
+    <layout name="pxabnsnfns00001100100" font="Open Sans" controllayout="pxabnsnfns00001100100" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -14,7 +13,7 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="स्वास्थ्य" />
+              <option name="title_text" value="passive" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -58,11 +57,7 @@
       <optiongroup name="controls">
         <options>
           <option name="volume" value="true" />
-          <option name="seekbar" value="false">
-            <options>
-              <option name="readonly" value="false" />
-            </options>
-          </option>
+          <option name="seekbar" value="false" />
           <option name="pauseplay" value="false" />
           <option name="replay" value="false" />
           <option name="search" value="false" />
@@ -196,32 +191,9 @@
       </control>
       <control name="close_btn" enabled="false" />
     </control_layout>
-    <control_layout name="pxabsnfns00001100101">
-      <control name="volume" enabled="true" />
-      <control name="seekbar" enabled="false" />
-      <control name="replay" enabled="false" />
-      <control name="pauseplay" enabled="false" />
-      <control name="logo" enabled="false" />
-      <control name="previous" enabled="true" />
-      <control name="next" enabled="true" />
-      <control name="swipeleft" enabled="true" />
-      <control name="swiperight" enabled="true" />
-      <control name="submit" enabled="true" />
-      <control name="finish" enabled="false" />
-      <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
-      <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
-      <control name="outline" enabled="true">
-        <controls>
-          <control name="search" enabled="false" />
-        </controls>
-      </control>
-      <control name="close_btn" enabled="true" />
-    </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="pxabsnfns00001100101">
+    <colorscheme name="pxabnsnfns00001100101">
       <color_group name="infopanel">
         <group_colors>
           <color name="link_text">
@@ -1127,7 +1099,7 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="pxabsnfns00001100101">
+    <string_table name="pxabnsnfns00001100101">
       <string id="check_include">Check to include</string>
       <string id="clear">Clear and return to menu</string>
       <string id="close">Close</string>
@@ -1142,7 +1114,6 @@
       <string id="acc_definition">definition</string>
       <string id="glossary">Glossary</string>
       <string id="terms">Terms</string>
-      <string id="send_an_email">Send an email</string>
       <string id="outline">Menu</string>
       <string id="disabled_orientation">Please rotate your device</string>
       <string id="next">NEXT</string>
@@ -1154,8 +1125,9 @@
       <string id="closed_captions">Captions</string>
       <string id="acc_pause">pause</string>
       <string id="acc_play">play</string>
+      <string id="send_an_email">Send an email</string>
       <string id="prev">PREV</string>
-      <string id="acc_skipnavigation">Skip navigation. Press enter to return to the slide.</string>
+      <string id="acc_previous">previous</string>
       <string id="question_list">Question List</string>
       <string id="acc_replay">replay</string>
       <string id="resources">Resources</string>
@@ -1165,12 +1137,12 @@
       <string id="acc_search_input">search</string>
       <string id="search_in">Search in:</string>
       <string id="search_results">Search Results</string>
+      <string id="acc_skipnavigation">Skip navigation. Press enter to return to the slide.</string>
       <string id="slide_text_chk">Slide Text</string>
       <string id="submitall">SUBMIT ALL</string>
       <string id="acc_submitall">submit all</string>
       <string id="submit">SUBMIT</string>
       <string id="acc_submit">submit</string>
-      <string id="acc_previous">previous</string>
       <string id="acc_volume">volume</string>
     </string_table>
   </string_tables>
@@ -1186,28 +1158,11 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.6Nu4m8s0RhO" displaytext="क्यू" expand="true" type="slide">
+        <slidelink slideid="" displaytext="Untitled Scene" expand="true" type="slide" />
+        <slidelink slideid="_player.5y20OLo1v0y" displaytext="Untitled Scene" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.6Nu4m8s0RhO.6WCDCBafcMn" displaytext="पेलेग्रा रोग किस विटामिन की कमी के कारण होता है -" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.6Tc2Y14safV" displaytext="  बेरीबेरी रोग  किस विटामिन  की कमी से होता है" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.647T0JfHd1l" displaytext="रिकेट्स नामक रोग किस विटामिन  की कमी से होता है" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.5gkAcQSFCqr" displaytext="मुख  के किनारे एवं होटो की त्वचा का फटना कौन सा रोग कहलाता  है " expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.65JMSdJJtiz" displaytext="  ह्रदय की धड़कन कम होना पेशियां एवं तंत्रिकाएं कमजोर होना किस               विटामिन की कमी से होताहै" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.6UlI3lGZk2P" displaytext=" निम्न में से जो   सही है उसका  चयनकरें" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.622ODpIXVzH" displaytext=" निम्न मेंसे कौनसा तत्व कैल्शियम के साथ मिलकर हड्डियों को मजबूत बनाता है" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.68cr1aOzMvj" displaytext="पोटेशियम कामुख्यकार्यहै" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.6lJAH79Oxf2" displaytext=" थायरोक्सिन हार्मोन के निर्माण में सहायता  करताहै" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.6cidvvvctd5" displaytext=" दूध  हरी सब्जियांसेरूप से कौन सा त्व प्रदान  करतेहैं" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.6h1N8TGHjVx" displaytext="ड्रेकनकुलस मेडीनेंसिस नामक कर्मी किस  रोगका जनक है" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.5kifExmeufv" displaytext="किस वर्ष नारू रोग का पूर्ण उन्मोलन कर दिया गया है " expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.6AgkvBpN0qx" displaytext="मोटापा (OBESITY) प्रारम्भ होता है-" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.6dB2TkgWO9s" displaytext=" एक सामान्य व्यक्ति का सिस्टोलिक रक्तचाप पारा  होता है" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.6lpwelhSfdF" displaytext="एक सामान्य व्यक्ति का डायस्टोलिक रक्तचाप होता है" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.6W17K5jMcgq" displaytext=" सर्वप्रथम रक्तचाप किस पशु में ना पा गया" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.6kJFqA4cToj" displaytext="    उच्च रक्तचाप के व्यक्तियों को पोटेशियम युक्तभोजन करना चाहिए" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.5uUNbQWpC6I" displaytext=" निकोटीयेना टेबोकम पादप में   कितने प्रतिशत निकोटिन  पाया जाताहै" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.6NrxDBZQ0Cs" displaytext="मदिरा का रासायनिक सूत्र लिखिए" expand="false" type="slide" />
-            <slidelink slideid="_player.6Nu4m8s0RhO.5adRcMK9DWR" displaytext="भारत का खाद्यपदार्थ अल्प मिश्रण निषेध अधिनियम कितने पदार्थों में  मिलावट का  नियमन करता है" expand="false" type="slide" />
+            <slidelink slideid="_player.5y20OLo1v0y.6MAmSJ3ePbA" displaytext="WELCOME" expand="false" type="slide" />
+            <slidelink slideid="_player.5y20OLo1v0y.66zOiDg2ume" displaytext="Suman ………………..by principal on the Independence Day.	" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
