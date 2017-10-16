@@ -1,122 +1,271 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html style="height: 100%;" lang="en-US">
 <head>
-<meta name='viewport' content='initial-scale = 1, minimum-scale = 1, maximum-scale = 1'/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="x-ua-compatible" content="IE=10">
-<title></title>
-<style type="text/css">#initialLoading{background:url(assets/htmlimages/loader.gif) no-repeat center center;background-color:#ffffff;position:absolute;margin:auto;top:0;left:0;right:0;bottom:0;z-index:10010;}</style>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <!-- Created using Storyline 3 - http://www.articulate.com  -->
+    <!-- version: 3.0.10762.0 -->
 
-<script>
+    <title>Untitled1</title>
+    <style>
+        body {
+            background: #ffffff;
+            overflow: hidden;
+        }
 
-var deviceReady = false;
-var initCalled = false ;
-var initialized = false;
+        html, body, table {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
 
-function onBodyLoad()
-{
-	if(typeof window.device === 'undefined')
-	{
-		document.addEventListener("deviceready", onDeviceReady, false);
-	}
-	else
-	{
-		onDeviceReady();
-	}
-}
+        table td {
+            vertical-align: middle;
+            text-align: center;
+        }
 
-function onDeviceReady()
-{
-	deviceReady = true ;
-	if(initCalled === true)
-		initializeCP();
-}
+        #nosupport {
+            background: #f5f5f5;
+            margin: 50px 65px;
+            border: 1px solid #d5d5d5;
+            width: calc(100% - 130px);
+            height: calc(100% - 100px);
+        }
 
-function initializeCP()
-{
-	if(initialized)
-		return;
-	initCalled = true ;
-	if(cp.pg && deviceReady === false)
-		return;
+        p {
+            font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+            font-size: 12pt;
+            color: #303030;
+        }
 
-	function cpInit()
-	{
-		document.body.innerHTML = " <div class='cpMainContainer' id='cpDocument' style='left: 0px; top:0px;' >	<div id='main_container' style='top:0px;position:absolute;width:100%;height:100%;'>	<div id='projectBorder' style='top:0px;left:0px;width:100%;height:100%;position:absolute;display:block'></div>	<div class='shadow' id='project_container' style='left: 0px; top:0px;width:100%;height:100%;position:absolute;overflow:hidden;' >	<div id='project' class='cp-movie' style='width:100% ;height:100%;overflow:hidden;'>		<div id='project_main' class='cp-timeline cp-main'>			<div id='div_Slide' onclick='cp.handleClick(event)' style='top:0px; width:100% ;height:100% ;position:absolute;-webkit-tap-highlight-color: rgba(0,0,0,0);'></div>			<canvas id='slide_transition_canvas'></canvas>		</div>		<div id='autoplayDiv' style='display:block;text-align:center;position:absolute;left:0px;top:0px;'>			<img id='autoplayImage' src='' style='position:absolute;display:block;vertical-align:middle;'/>			<div id='playImage' tabindex='9999' role='button' aria-label='play' onkeydown='cp.CPPlayButtonHandle(event)' onClick='cp.movie.play()' style='position:absolute;display:block;vertical-align:middle;'></div>		</div>	</div>	<div id='toc' style='left:0px;position:absolute;-webkit-tap-highlight-color: rgba(0,0,0,0);'>	</div>	<div id='playbar' style='bottom:0px; position:fixed'>	</div>	<div id='cc' style='left:0px; position:fixed;visibility:hidden;pointer-events:none;' onclick='cp.handleCCClick(event)'>		<div id='ccText' style='left:0px;float:left;position:absolute;width:100%;height:100%;'>		<p style='margin-left:8px;margin-right:8px;margin-top:2px;'>		</p>		</div>		<div id='ccClose' style='background-image:url(./assets/htmlimages/ccClose.png);right:10px; position:absolute;cursor:pointer;width:13px;height:11px;' onclick='cp.showHideCC()'>		</div>	</div>	<div id='gestureIcon' class='gestureIcon'>	</div>	<div id='gestureHint' class='gestureHintDiv'>		<div id='gImage' class='gesturesHint'></div>	</div>	<div id='pwdv' style='display:block;text-align:center;position:absolute;width:100%;height:100%;left:0px;top:0px'></div>	<div id='exdv' style='display:block;text-align:center;position:absolute;width:100%;height:100%;left:0px;top:0px'></div>	</div>	</div></div><div id='blockUserInteraction' class='blocker' style='width:100%;height:100%;'>	<table style='width:100%;height:100%;text-align:center;vertical-align:middle' id='loading' class='loadingBackground'>		<tr style='width:100%;height:100%;text-align:center;vertical-align:middle'>			<td style='width:100%;height:100%;text-align:center;vertical-align:middle'>				<image id='preloaderImage'></image>				<div id='loadingString' class='loadingString'>Loading...</div>			</td>		</tr>	</table></div> <div id='initialLoading'></div>";
-		cp.DoCPInit();
-		var lCpExit = window["DoCPExit"];
-		window["DoCPExit"] = function()
-		{
-			if(cp.UnloadActivties)
-				cp.UnloadActivties();
-			lCpExit();
-		};
-	}
-	
-	cpInit();
-	initialized = true;
-}
+        a {
+            color: #2D9DDA;
+            text-decoration: none !important;
+        }
 
-</script>
+    </style>
+    <script>
+        var html5Supported = true,
+                showWarning = false;
 
- </head>
-<body onload="onBodyLoad()">
-		<div id='initialLoading'></div>
-<script>
-		(function()
-		{
-			if(document.documentMode < 9)
-			{
-				document.body.innerHTML = "";
-				document.write("The content you are trying to view is not supported in the current Document Mode of Internet Explorer. Change the Document Mode to Internet Explorer 9 Standards and try to view the content again.<br>To change the Document Mode, press F12, click Document Mode: <current mode>, and then select Internet Explorer 9 Standards.");
-				return;
-			}
-			window.addEventListener("load",function() 
-			{
-				setTimeout(function() 
-				{					
-					var script = document.createElement('script');
-					script.type = 'text/javascript';
-					script.src = 'assets/js/CPXHRLoader.js';
-					script.defer = 'defer';
-					script.onload = function()
-					{
-						var lCSSLoaded = false;
-						var lJSLoaded = false;
-						function constructDIVs()
-						{
-							if(lCSSLoaded && lJSLoaded)
-							{
-								initializeCP();
-							}
-						}
-						cpXHRJSLoader.css('assets/css/CPLibraryAll.css',function() {
-							lCSSLoaded = true;
-							constructDIVs();
-						});
-						var lJSFiles = [  'assets/js/jquery-1.11.3.min.js','assets/js/OpenAjaxManagedHub-all.js','assets/js/CPM.js','assets/playbar/playbarScript.js' ];
-						cpXHRJSLoader.js(lJSFiles,function()
-						{
-							//console.log("js loaded");
+        function displayWarning() {
+            if (showWarning) {
+                document.getElementById('nosupport').style.visibility = 'visible';
+            }
+        }
 
-							var imagesJSONFiles = [ 'dr/imgmd.json' ];
-							cpXHRJSLoader.loadImagesJSON(imagesJSONFiles,function(imageToJSONPathMap){
-								cp.imageToJSONPathMap = imageToJSONPathMap;
-								var imageJSONFiles = [ 'dr/img1.json' ];
-								if(window.location.protocol.substr(0,4) == "file")
-									cpXHRJSLoader.preloadURLs(imageJSONFiles, constructDIVs);
-								lJSLoaded = true;
-								if(window.location.protocol.substr(0,4) != "file" || !imageJSONFiles.length)
-									constructDIVs();
-							});
-						});
-					}
-					document.getElementsByTagName('head')[0].appendChild(script);
-				},1);
-			},false);
-		})();
-		
-</script>
-<noscript style="text-align:center;font-size:24px;">Enable Javascript support in the browser.</noscript>
+    </script>
+    <!--[if lte IE 9]><script>html5Supported = false;</script><![endif]-->
+
+    <script type="text/javascript">
+
+        (function () {
+
+            var settings = {
+                lmsEnabled: false,
+                tincanEnabled: false,
+                aoEnabled: false,
+                runtimeOrder: [{"type":"html5","url":"story_html5.html"},{"type":"flash","url":"story_flash.html"}],
+                warnOnCommitFail: false
+            };
+
+            var PARAM_WARN_ON_COMMIT = {name: 'warncommit', value: 1},
+                    PARAM_LMS = {name: 'lms', value: 1},
+                    PARAM_TINCAN = {name: 'tincan', value: true},
+                    PARAM_AO = {name: 'aosupport', value: true};
+
+            var detection = {
+                agent: navigator.userAgent,
+
+                flashEnabled: function () {
+                    var description, version, flashAX,
+                            plugin = navigator.plugins["Shockwave Flash"];
+
+                    if (plugin != null) {
+                        description = plugin.description.split(" ");
+                        version = Number(description[description.length - 2]);
+
+                        return (version >= 10) || isNaN(version);
+                    } else {
+                        try {
+                            flashAX = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.10");
+                            return (flashAX != null);
+                        } catch (e) {
+                        }
+                    }
+
+                    return false;
+                },
+
+                html5Enabled: function () {
+                    return html5Supported;
+                },
+
+                ampEnabled: function () {
+                    return ((this.isIOS() && this.isIPad()) || this.isAndroid());
+                },
+
+                isIOS: function () {
+                    return (this.agent.indexOf("AppleWebKit/") > -1 && this.agent.indexOf("Mobile/") > -1)
+                },
+
+                isAndroid: function () {
+                    return (this.agent.indexOf("Android") > -1);
+                },
+
+                isIPad: function () {
+                    return (this.agent.indexOf("iPad") > -1);
+                }
+            };
+
+            var router = {
+
+                init: function () {
+                    var i,
+                            redirected = false,
+                            order = settings.runtimeOrder,
+                            launchMap = {
+                                flash: {
+                                    isEnabled: 'flashEnabled',
+                                    getParams: 'getFlashParams',
+                                    delim: '?'
+                                },
+                                html5: {
+                                    isEnabled: 'html5Enabled',
+                                    getParams: 'getHtml5Params',
+                                    delim: '?'
+                                },
+                                amp: {
+                                    isEnabled: 'ampEnabled',
+                                    getParams: 'getAmpParams',
+                                    delim: '#'
+                                }
+                            };
+
+                    if (document.location.search.toLowerCase().indexOf('forceflash') != -1) {
+                        this.moveFlashToStartOfOrder(order);
+                    }
+
+                    for (i = 0; i < order.length; i++) {
+                        var launchInfo = launchMap[order[i].type],
+                                url = order[i].url;
+
+                        if (detection[launchInfo.isEnabled]()) {
+                            this.redirect(url, this[launchInfo.getParams](), launchInfo.delim);
+                            redirected = true;
+                            break;
+                        }
+                    }
+
+                    if (!redirected) {
+                        showWarning = true;
+                    }
+                },
+
+                moveFlashToStartOfOrder: function (order) {
+                    var i,
+                        flashIndex = -1;
+                    for (i = 0; i < order.length; i++) {
+                        if (order[i].type == "flash") {
+                            flashIndex = i;
+                            break;
+                        }
+                    }
+                    if (flashIndex != -1) {
+                        order.splice(0, 0, order.splice(flashIndex, 1)[0]);
+                    }
+                },
+
+                getQueryString: function (params) {
+                    params = params || [];
+                    var i,
+                            queryString = document.location.search.substr(1),
+                            paramArr = queryString.length > 0 ? queryString.split('&') : [];
+
+                    for (i = 0; i < params.length; i++) {
+                        paramArr.push([params[i].name, params[i].value].join('='));
+                    }
+
+                    return paramArr.join('&');
+                },
+
+                formatUrl: function (url, params, delim) {
+                    delim = delim || '?';
+
+                    var queryString = this.getQueryString(params);
+
+                    if (queryString != null && queryString.length > 0) {
+                        return [url, queryString].join(delim);
+                    }
+
+                    return url;
+                },
+
+                redirect: function (url, params, delim) {
+                    window.location.replace(this.formatUrl(url, params, delim));
+                },
+
+                getFlashParams: function () {
+                    return [];
+                },
+
+                getHtml5Params: function () {
+                    var params = [];
+                    if (settings.tincanEnabled) {
+                        params.push(PARAM_TINCAN);
+                    } else if (settings.lmsEnabled) {
+                        params.push(PARAM_LMS);
+                        if (settings.warnOnCommitFail) {
+                            params.push(PARAM_WARN_ON_COMMIT);
+                        }
+                    }
+
+                    return params;
+                },
+
+                getAmpParams: function () {
+                    var tincanProto = settings.aoEnabled || settings.tincanEnabled,
+                            params = [];
+                    // build AMP params
+                    if (tincanProto) {
+                        params.push(PARAM_TINCAN);
+                        if (settings.aoEnabled) {
+                            params.push(PARAM_AO);
+                        }
+                    }
+                    return params;
+                }
+            };
+
+            router.init();
+        })();
+
+    </script>
+</head>
+<body onload="displayWarning()" style="height: 100%;">
+<div id="nosupport" style="visibility: hidden;">
+    <table>
+        <tr>
+            <td>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="90.2" height="74.9" viewBox="0 0 90 75" version="1.1">
+                        <g transform="scale(.1)">
+                            <path d="m409 7c54-25 106 20 130 66 106 170 213 340 320 510 17 28 32 63 19 96-14 36-55 51-91 51-224 1-448 0-672 0-35 1-76-3-100-33-26-32-15-77 5-108 107-173 216-344 324-517 16-26 35-53 65-65z"
+                                  fill="#4c4c4c"/>
+                            <path d="m419 57c26-20 55 4 68 27 109 174 218 348 328 522 9 17 23 35 17 55-11 20-36 18-55 19-224 0-447 0-670 0-20-1-46 1-57-19-5-18 6-34 14-48 109-174 218-348 327-522 9-12 17-25 28-34z"
+                                  fill="#f5f5f5"/>
+                            <path d="m429 179c25-12 58 8 56 35-1 81-5 161-10 242 2 32-49 39-57 9-7-73-6-146-11-219-1-24-4-56 22-67zM430 539 430 539 430 539c45-24 80 53 32 72-45 24-80-53-32-72z"
+                                  fill="#4c4c4c"/>
+                        </g>
+                    </svg>
+                </p>
+                <p>This course cannot be played.</p>
+                <p><a href="https://ipc.articulate.com/slw/3/en/cannotplay/">Learn More</a></p>
+
+            </td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>
