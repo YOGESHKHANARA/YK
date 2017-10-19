@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns00001100101" textdirection="ltr" device="true" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" outputtype="undefined">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npnxnanbsnfns00001100101" textdirection="ltr" device="true" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" outputtype="undefined">
   <layouts>
-    <layout name="npnxnanbsnfns00001100101" font="Open Sans" controllayout="npnxnanbsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
-    <layout name="pxabnsnfns00001100101" font="Open Sans" controllayout="pxabnsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
-    <layout name="npxnabnsnfns00001100101" font="Open Sans" controllayout="npxnabnsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
-    <layout name="npnxnanbnsnfns00001100101" font="Open Sans" controllayout="npnxnanbnsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
-    <layout name="pxabnsnfns00001100100" font="Open Sans" controllayout="pxabnsnfns00001100100" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
+    <layout name="npnxnanbsnfns00001100101" font="Open Sans" controllayout="npnxnanbsnfns00001100101" colorscheme="npnxnanbsnfns00001100101" string_table="npnxnanbsnfns00001100101" />
+    <layout name="pxabnsnfns00001100101" font="Open Sans" controllayout="pxabnsnfns00001100101" colorscheme="npnxnanbsnfns00001100101" string_table="npnxnanbsnfns00001100101" />
+    <layout name="npxnabnsnfns00001100101" font="Open Sans" controllayout="npxnabnsnfns00001100101" colorscheme="npnxnanbsnfns00001100101" string_table="npnxnanbsnfns00001100101" />
+    <layout name="npnxnanbnsnfns00001100101" font="Open Sans" controllayout="npnxnanbnsnfns00001100101" colorscheme="npnxnanbsnfns00001100101" string_table="npnxnanbsnfns00001100101" />
+    <layout name="pxabnsnfns00001100100" font="Open Sans" controllayout="pxabnsnfns00001100100" colorscheme="npnxnanbsnfns00001100101" string_table="npnxnanbsnfns00001100101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -13,7 +13,7 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="11" />
+              <option name="title_text" value="ind_con_1" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -193,7 +193,7 @@
     </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="pxabnsnfns00001100101">
+    <colorscheme name="npnxnanbsnfns00001100101">
       <color_group name="infopanel">
         <group_colors>
           <color name="link_text">
@@ -1099,7 +1099,7 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="pxabnsnfns00001100101">
+    <string_table name="npnxnanbsnfns00001100101">
       <string id="check_include">Check to include</string>
       <string id="clear">Clear and return to menu</string>
       <string id="close">Close</string>
@@ -1158,30 +1158,24 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.5gcS1ERfYCI" displaytext="क्यू" expand="true" type="slide">
+        <slidelink slideid="_player.6QnIXDchlCH" displaytext="Untitled Scene" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.5gcS1ERfYCI.63f6ikv4bUQ" displaytext="welcome" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.69y3wsdI9X9" displaytext=" मसूड़ों में खून आना और चकत्ते बनना किस विटामिन की कमी  के कारण होता है" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.5dHVgP09eRL" displaytext="  बेरीबेरी रोग  किस विटामिन  की कमी से होता है" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.6LzYU1YUwMu" displaytext="पेलेग्रा रोग किस विटामिन की कमी के कारण होता है -" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.5XcFSrxSmM0" displaytext="रिकेट्स नामक रोग किस विटामिन  की कमी से होता है" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.5iiol03j0AU" displaytext="मुख  के किनारे एवं होटो की त्वचा का फटना कौन सा रोग कहलाता  है " expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.6KQtRRr51Qh" displaytext="  ह्रदय की धड़कन कम होना पेशियां एवं तंत्रिकाएं कमजोर होना किस               विटामिन की कमी से होताहै" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.6FLLCZsQC6K" displaytext=" निम्न में से जो   सही है उसका  चयनकरें" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.69Mmgw0P0Se" displaytext=" निम्न मेंसे कौनसा तत्व कैल्शियम के साथ मिलकर हड्डियों को मजबूत बनाता है" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.5sOFPCMxzSI" displaytext="पोटेशियम कामुख्यकार्यहै" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.68QIBMNJ9pS" displaytext=" थायरोक्सिन हार्मोन के निर्माण में सहायता  करताहै" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.6qjZXFsh3Dq" displaytext=" दूध  हरी सब्जियांसेरूप से कौन सा त्व प्रदान  करतेहैं" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.6ffL7XmykpH" displaytext="ड्रेकनकुलस मेडीनेंसिस नामक कर्मी किस  रोगका जनक है" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.643POWiAbl4" displaytext="किस वर्ष नारू रोग का पूर्ण उन्मोलन कर दिया गया है " expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.6hcXJm4Wp4Z" displaytext="मोटापा (OBESITY) प्रारम्भ होता है-" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.5hOarjRav8V" displaytext=" एक सामान्य व्यक्ति का सिस्टोलिक रक्तचाप पारा  होता है" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.5p2VsYfFJiQ" displaytext="एक सामान्य व्यक्ति का डायस्टोलिक रक्तचाप होता है" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.5wiRuy0bCXQ" displaytext=" सर्वप्रथम रक्तचाप किस पशु में ना पा गया" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.5fTVWvOJeh7" displaytext="    उच्च रक्तचाप के व्यक्तियों को पोटेशियम युक्तभोजन करना चाहिए" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.5m8CicOVhdG" displaytext=" निकोटीयेना टेबोकम पादप में   कितने प्रतिशत निकोटिन  पाया जाताहै" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.6XPYlUWhyLL" displaytext="मदिरा का रासायनिक सूत्र लिखिए" expand="false" type="slide" />
-            <slidelink slideid="_player.5gcS1ERfYCI.63kAD1yba65" displaytext="भारत का खाद्यपदार्थ अल्प मिश्रण निषेध अधिनियम कितने पदार्थों में  मिलावट का  नियमन करता है" expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.6GQz4E6oWo2" displaytext="भारत के किस प्रांत में  सर्वप्रथम साम्यवादी सरकार की स्थापना हुई ?" expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.6R6NmS8q5iy" displaytext="संविधान प्रश्नोतरी " expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.5frC9fe5qxl" displaytext="निम्न  से कौन एक रिट न्यायालय में कार्यवाही लम्बित होने की दशा में लागू की जाती है ?" expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.60HKeeQVHsZ" displaytext=" भारतीय संविधान की प्रस्तावना में ‘‘पन्थनिरपेक्ष ‘‘ शब्द जोड़ा गया ?" expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.6Bhx8ElIlqA" displaytext="किस समिति में राज्यसभा का प्रतिनिधित्व नहीं होता है ?" expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.6NhYXBXwOSt" displaytext="पंचायतों एवं नगरपालिकाओं के स्थानीय प्रशासन को संवैधानिक दर्जा कब दिया गया ?" expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.6nsTT4SZuSB" displaytext=" वित्त आयोग का गठन किस अनुच्छेद में है ?" expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.5bymlKnw72F" displaytext=" (07): सुमेलित कीजिए -" expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.6lc5Dmiedfp" displaytext=" निम्न राज्यों का सृजन वर्ष 1990 के बाद हुआ था, इन्हें उनके गठन के आरोही कालानुक्रम में व्यस्थित कीजिए -" expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.5o2EPe30slD" displaytext="प्रोटेम स्पीकर का कर्तव्य होता है:-" expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.6m2GbpEBCGj" displaytext="यदि पंचायत भंग होती है, तो किस अवधि के अंदर निर्वाचन होंगे ?" expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.5lwPRCH11GR" displaytext="निम्नलिखित में से भारत में पहला नगर निगम कहां स्थापित हुआ था ?" expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.6OSMkZb80qJ" displaytext=" ‘‘मंत्रिमंडल में कुल मंत्रियों की संख्या, प्रधानमंत्री को सम्मिलित करते हुए लोकसभा के सदस्यों की कुल संख्या के पन्द्रह प्रतिशत से अधिक नहीं होगी‘‘ यह संविधान संशोधन कौन सा है ?" expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.6mHR3PLzUPe" displaytext="भारत में राष्ट्रीय जल संसाधन परिषद् का अध्यक्ष कौन होता है ?" expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.69zi6JT5uEb" displaytext=" परमाण्विक ऊर्जा विभाग, किसके अधीन होता है ?" expand="false" type="slide" />
+            <slidelink slideid="_player.6QnIXDchlCH.6MZBOTkx79A" displaytext="सरकारिया आयोग गठित हुआ था जो निम्न समीक्षा करने के लिए -" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
